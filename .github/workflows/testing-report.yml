@@ -14,3 +14,7 @@
   - summary: |
     Проверка добавления товара в корзину
   status: pass
+
+  - summary: |
+    Проверка заказа товара
+  status: fail
