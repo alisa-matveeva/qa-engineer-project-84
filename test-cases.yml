@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта страница каталога товаров
   test-data: |
-    Слово для поиска - milk
+    Слово для поиска - empty
   steps:
     - Вводим тестовое слово 
   expected-result: |
@@ -19,7 +19,7 @@
   prerequisites:
     Открыта страница каталога товаров
   test-data: |
-    Категория - home-decoration
+    Категория - empty
   steps:
     - Выбираем категорию
   expected-result: |
@@ -32,7 +32,7 @@
   prerequisites:
     Открыта страница каталога товаров
   test-data: |
-    Фильтр - Gucci
+    Фильтр - empty
   steps:
     - Выбираем фильтр
   expected-result: |
@@ -45,7 +45,7 @@
   prerequisites:
     Открыта страница каталога товаров
   test-data: |
-    товар - Cucumber
+    товар - empty
   steps:
     - Выбираем товар
     - Нажимаем кнопку «add to cart»
@@ -60,7 +60,7 @@
   prerequisites:
     Открыта страница корзины
   test-data: |
-    товар - Cucumber
+    товар - empty
   steps:
     - Нажимаем кнопку «checkout»
     - Просматриваем заказ
@@ -75,7 +75,7 @@
   prerequisites:
     Открыта страница каталога товаров
   test-data: |
-    товар - Cucumber
+    товар - empty
   steps:
     - Просматриваем товар в каталоге
   expected-result: |
