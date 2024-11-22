@@ -18,3 +18,7 @@
 - summary: |
     Проверка заказа товара
   status: fail
+
+- summary: |
+    Проверка карточки товара
+  status: fail
