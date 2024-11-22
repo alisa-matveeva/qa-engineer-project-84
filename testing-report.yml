@@ -11,10 +11,10 @@
     Проверка фильтрации товара
   status: pass
 
-  - summary: |
+- summary: |
     Проверка добавления товара в корзину
   status: pass
 
-  - summary: |
+- summary: |
     Проверка заказа товара
   status: fail
