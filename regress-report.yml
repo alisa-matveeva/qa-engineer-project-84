@@ -1,8 +1,92 @@
 ---
 test-cases:
   - summary: |
-      Проверка заказа товара
-    status: fail
+    Проверка поиска товара по ключевому слову
+  status: pass
+
+- summary: |
+    Проверка поиска товара по категории
+  status: pass
+
+- summary: |
+    Проверка фильтрации товара
+  status: pass
+
+- summary: |
+    Проверка добавления товара в корзину со страницы каталога
+  status: pass
+
+- summary: |
+    Проверка заказа товара
+  status: fail
+
+- summary: |
+    Проверка карточки товара
+  status: pass
+
+- summary: |
+    Проверка добавление товара в карзину со страницы товара
+  status: pass
+
+- summary: |
+    Проверка фильтра по цене
+  status: pass
+
+- summary: |
+    Проверка фильтра наличию
+  status: pass
+
+- summary: |
+    Проверка удаления товара из корзины
+  status: pass
+
+- summary: |
+    Проверка добавления нескольких товаров в корзину
+  status: pass
+
+- summary: |
+    Проверка добавления одинаковых товаров в корзину
+  status: pass
+
+- summary: |
+    Проверка отчистки корзины
+  status: pass
+
+- summary: |
+    Проверка продолжения покупок из корзины
+  status: pass
+
+- summary: |
+    Проверка навигации страницы каталога
+  status: pass
+
+- summary: |
+    Проверка перехода по хэштегам
+  status: pass
+
+- summary: |
+    Негативная проверка поиска товара
+  status: fail
+
+- summary: |
+    Проверка изменения языка
+  status: pass
+
+- summary: |
+    Проверка на кроссбраузерность
+  status: pass
+
+- summary: |
+    Проверка на мобильном устройстве
+  status: pass
+
+- summary: |
+    Проверка закрытия окна заказа товара
+  status: pass
+
+- summary: |
+    Проверка окна оплаты
+  status: fail
 
 bugreports:
   - summary: |
