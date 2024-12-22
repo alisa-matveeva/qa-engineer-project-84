@@ -90,8 +90,8 @@ test-cases:
   
   - summary: |
     Проверка отображения карточки товара
-  status: fail
-
+  status: pass
+  
   - summary: |
     Проверка отображения карточки товара в каталоге
   status: fail
