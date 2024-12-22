@@ -87,5 +87,17 @@ test-cases:
   - summary: |
       Проверка окна оплаты
     status: fail
+  
+  - summary: |
+    Проверка отображения карточки товара
+  status: pass
+
+  - summary: |
+    Проверка отображения карточки товара в каталоге
+  status: pass
+
+  - summary: |
+    Проверка корзины
+  status: pass
 
 bugreports: []
