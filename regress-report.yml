@@ -90,11 +90,11 @@ test-cases:
   
   - summary: |
     Проверка отображения карточки товара
-  status: pass
+  status: fail
 
   - summary: |
     Проверка отображения карточки товара в каталоге
-  status: pass
+  status: fail
 
   - summary: |
     Проверка корзины
