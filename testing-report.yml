@@ -102,3 +102,7 @@
 - summary: |
     Проверка корзины
   status: pass
+
+- summary: |
+    Проверка адаптивности
+  status: fail
