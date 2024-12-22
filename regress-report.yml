@@ -90,14 +90,28 @@ test-cases:
   
   - summary: |
     Проверка отображения карточки товара
-  status: pass
+    status: pass
   
   - summary: |
     Проверка отображения карточки товара в каталоге
-  status: fail
+    status: fail
 
   - summary: |
     Проверка корзины
-  status: pass
+    status: pass
 
-bugreports: []
+  - summary: |
+    Проверка адаптивности
+    status: fail
+    
+bugreports: 
+  - summary: |
+      В мобильной версии каталог отображается некорректно
+    environment: |
+      Ссылка на билд/коммит/версия ПО и всего окружения
+    steps-to-reproduce: |
+      Полный перечень шагов для воспроизведения и описание, на каком шаге произошла ошибка
+    expected-result: |
+      Какой результат должен был быть без ошибки
+    actual-result: |
+      Какой результат получился на самом деле
