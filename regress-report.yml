@@ -82,7 +82,7 @@ test-cases:
   
   - summary: |
       Проверка закрытия окна заказа товара
-    status: pass
+    status: fail
   
   - summary: |
       Проверка окна оплаты
