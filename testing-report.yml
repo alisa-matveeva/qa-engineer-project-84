@@ -105,4 +105,12 @@
 
 - summary: |
     Проверка адаптивности
-  status: fail
+  status: fail 
+
+- summary: |
+    Проверка SPA-приложения
+  status: pass
+
+- summary: |
+    Проверка изменения языка на английский
+  status: pass
