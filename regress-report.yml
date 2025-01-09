@@ -58,7 +58,7 @@ test-cases:
   
   - summary: |
       Проверка навигации страницы каталога
-    status: pass
+    status: fail
   
   - summary: |
       Проверка перехода по хэштегам
