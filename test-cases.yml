@@ -334,27 +334,41 @@
 
  summary: |
     Проверка корзины
-  requirement: |
+ requirement: |
     Пользователь может добавить товар в корзину и продолжить выбирать товары в каталоге
-  prerequisites:
+ prerequisites:
     Открыта страница корзины
-  test-data: |
+ test-data: |
     товар - empty
-  steps:
+ steps:
     - Нажимаем кнопку «Continue shopping»
-  expected-result: |
+ expected-result: |
     Пользователь может выйти из корзины и продолжить выбирать товары в каталоге
 
  summary: |
     Проверка адаптивности
-  requirement: |
+ requirement: |
     Пользователь может просматривать сайт на мобильном устройстве
-  prerequisites:
+ prerequisites:
     Открыта страница каталога
-  test-data: |
+ test-data: |
     товар - empty
-  steps:
+ steps:
     - Выбираем товар
     - Переходим в корзину
-  expected-result: |
-    Сайт отображается корректно
+ expected-result: |
+    Сайт отображается корректно 
+
+ summary: |
+    Проверка SPA-приложения
+ requirement: |
+    Пользователь будет просматривать каталог товаров, фильтруя их и пользуясь постраничным выводом. SPA-приложение не будет перезагружать страницу 
+ prerequisites:
+    Открыта страница каталога
+ test-data: |
+    фильтр - empty
+ steps:
+    - Фильтуем товар
+ expected-result: |
+    Страница не перегружается, при фильтрации товара
+
