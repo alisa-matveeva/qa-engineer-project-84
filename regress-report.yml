@@ -30,7 +30,7 @@ test-cases:
   
   - summary: |
       Проверка фильтра по цене
-    status: pass
+    status: fail
   
   - summary: |
       Проверка фильтра наличию
@@ -42,7 +42,7 @@ test-cases:
   
   - summary: |
       Проверка добавления нескольких товаров в корзину
-    status: pass
+    status: fail
   
   - summary: |
       Проверка добавления одинаковых товаров в корзину
