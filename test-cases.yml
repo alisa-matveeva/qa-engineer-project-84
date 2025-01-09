@@ -6,9 +6,9 @@
   prerequisites: |
     Открыта страница каталога товаров
   test-data: |
-    Слово для поиска - empty
+    empty
   steps:
-    - Вводим тестовое слово в поисковую строку
+    - Вводим в стоку поиска слово из названия товара
   expected-result: |
     Пользователь видит товар, который он искал
 
@@ -19,7 +19,7 @@
   prerequisites:
     Открыта страница каталога товаров
   test-data: |
-    Категория - empty
+    empty
   steps:
     - Выбираем категорию
   expected-result: |
@@ -32,7 +32,7 @@
   prerequisites:
     Открыта страница каталога товаров
   test-data: |
-    Фильтр - empty
+    empty
   steps:
     - Выбираем фильтр по бренду
   expected-result: |
@@ -45,7 +45,7 @@
   prerequisites:
     Открыта страница каталога товаров
   test-data: |
-    товар - empty
+    empty
   steps:
     - Нажимаем кнопку «add to cart»
     - в шапке сайта заходим в cart
@@ -59,7 +59,7 @@
   prerequisites:
     Открыта страница корзины
   test-data: |
-    товар - empty
+    empty
   steps:
     - Добавление товара в корзину
     - Нажимаем кнопку «checkout»
@@ -75,11 +75,11 @@
   prerequisites:
     Открыта страница каталога товаров
   test-data: |
-    товар - empty
+    empty
   steps:
     - Просматриваем товар в каталоге
   expected-result: |
-    Карточка товара отображает его рейтинг
+    Карточка товара отображает его рейтинг 
 
 - summary: |
     Проверка добавление товара в карзину со страницы товара
@@ -88,7 +88,7 @@
   prerequisites:
     Открыта страница товара empty
   test-data: |
-    товар - empty
+    empty
   steps:
     - Нажимаем кнопку «add to cart»
     - в шапке сайта заходим в cart
@@ -115,20 +115,20 @@
   prerequisites:
     Открыта страница каталога
   test-data: |
-    фильтр - empty
+    empty
   steps:
     - Ставим галочку на фильтре «in stock»
   expected-result: |
     Пользователь видит товар, который он отфильтровал по наличию
 
 - summary: |
-    Проверка удаления товара из корзины
+    Проверка удаления товара из корзины, который ранее был добавлен в корзину
   requirement: |
     При удалении товара из корзины, пользователь может убрать ненужный товар 
   prerequisites:
     Открыта страница корзины
   test-data: |
-    товар - empty
+    empty
   steps:
     - Нажимаем кнопку «delete»
   expected-result: |
@@ -141,8 +141,7 @@
   prerequisites:
     Открыта страница каталога
   test-data: |
-    товар - empty1
-    товар - empty2
+    empty
   steps:
     - Нажимаем кнопку «add to cart» на первом товаре
     - Нажимаем кнопку «add to cart» на втором товаре
@@ -157,22 +156,22 @@
   prerequisites:
     Открыта страница каталога
   test-data: |
-    товар - empty
+    empty
   steps:
     - Нажимаем кнопку «add to cart» на товаре
-    - Нажимаем кнопку «add to cart» для добавления второго экземпляра
+    - Нажимаем кнопку «add to cart» для добавления второго экземпляра товара
     - в шапке сайта заходим в cart
   expected-result: |
     Пользователь видит, что товары добавлены в корзину и количество товаров соответствует выбранному
 
 - summary: |
-    Проверка отчистки корзины
+    Проверка отчистки корзины, в которой ранее был добавлен товар
   requirement: |
     При отчистки корзины, пользователь может полностью удалить все товары 
   prerequisites:
     Открыта страница корзины
   test-data: |
-    товар - empty
+    empty
   steps:
     - Нажимаем кнопку «clear cart»
   expected-result: |
@@ -185,7 +184,7 @@
   prerequisites:
     Открыта страница корзины
   test-data: |
-    товар - empty
+    empty
   steps:
     - Нажимаем кнопку «continue shopping»
   expected-result: |
@@ -198,7 +197,7 @@
   prerequisites:
     Открыта страница каталога
   test-data: |
-    страница каталога
+    empty
   steps:
     - Нажимаем кнопку «next»
     - Нажимаем кнопку «previous»
@@ -212,8 +211,7 @@
   prerequisites:
     Открыта страница товара
   test-data: |
-    товар - empty
-    хэштег - empty
+    empty
   steps:
     - Нажимаем на хэштег
   expected-result: |
@@ -233,7 +231,7 @@
     Пользователь видит текст «Nothing found!»
 
 - summary: |
-    Проверка изменения языка
+    Проверка изменения языка на русский
   requirement: |
     При переключении языка, пользователь видит перевод страницы на нужный язык
   prerequisites: |
@@ -283,7 +281,7 @@
   prerequisites:
     Открыта страница корзины
   test-data: |
-    товар - empty
+    empty
   steps:
     - Нажимаем кнопку «checkout»
     - Нажимаем кнопку «close»
@@ -297,7 +295,7 @@
   prerequisites:
     Открыта страница корзины
   test-data: |
-    товар - empty
+    empty
   steps:
     - Нажимаем кнопку «checkout»
     - Переходим в окно оплаты
@@ -311,7 +309,7 @@
   prerequisites:
     Открыта страница товара
   test-data: |
-    товар - empty
+    empty
   steps:
     - Выбираем товар
     - Читаем информацию
@@ -325,50 +323,62 @@
   prerequisites:
     Открыта страница каталога
   test-data: |
-    товар - empty
+    empty
   steps:
     - Выбираем товар
     - Читаем информацию
   expected-result: |
     Пользователь может увидеть всю информацию по товару
 
- summary: |
+- summary: |
     Проверка корзины
- requirement: |
+  requirement: |
     Пользователь может добавить товар в корзину и продолжить выбирать товары в каталоге
- prerequisites:
+  prerequisites:
     Открыта страница корзины
- test-data: |
-    товар - empty
- steps:
+  test-data: |
+    empty
+  steps:
     - Нажимаем кнопку «Continue shopping»
- expected-result: |
+  expected-result: |
     Пользователь может выйти из корзины и продолжить выбирать товары в каталоге
 
- summary: |
+- summary: |
     Проверка адаптивности
- requirement: |
+  requirement: |
     Пользователь может просматривать сайт на мобильном устройстве
- prerequisites:
+  prerequisites:
     Открыта страница каталога
- test-data: |
-    товар - empty
- steps:
+  test-data: |
+    empty
+  steps:
     - Выбираем товар
     - Переходим в корзину
- expected-result: |
+  expected-result: |
     Сайт отображается корректно 
 
- summary: |
+- summary: |
     Проверка SPA-приложения
- requirement: |
+  requirement: |
     Пользователь будет просматривать каталог товаров, фильтруя их и пользуясь постраничным выводом. SPA-приложение не будет перезагружать страницу 
- prerequisites:
+  prerequisites:
     Открыта страница каталога
- test-data: |
-    фильтр - empty
- steps:
+  test-data: |
+    empty
+  steps:
     - Фильтуем товар
- expected-result: |
+  expected-result: |
     Страница не перегружается, при фильтрации товара
 
+- summary: |
+    Проверка изменения языка на английский
+  requirement: |
+    При переключении языка, пользователь видит перевод страницы на нужный язык
+  prerequisites: |
+    Открыта страница каталога товаров
+  test-data: |
+    Язык - English
+  steps:
+    - Нажимаем на кнопку «Language»
+  expected-result: |
+    Пользователь видит, что текст на странице переведен на нужный язык
