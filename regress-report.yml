@@ -70,7 +70,7 @@ test-cases:
   
   - summary: |
       Проверка изменения языка на русский
-    status: pass
+    status: fail
 
   - summary: |
       Проверка на кроссбраузерность
